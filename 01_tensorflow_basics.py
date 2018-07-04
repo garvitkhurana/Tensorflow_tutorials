@@ -47,6 +47,7 @@ z=x*3
 with tf.Session() as sess: 
     print(sess.run(y))
     print(z.eval()) ## other way
+    file_writer=tf.summary.FileWriter("/Users/garvitkhurana/Desktop/grp",sess.graph)
 
 
 '''----------------------------------------------------------------------'''
